@@ -130,7 +130,7 @@ h1 {
 	display: flex;
 	/* margin-left: 4em;
 	margin-right: 4em; */
-}
+	}
 .asideimg > .img {
 	flex: 1;
 	display: flex;
@@ -146,6 +146,21 @@ h1 {
 	margin-bottom: auto;
 	margin-left: 1em;
 	margin-right: 1em;
+}
+
+@media (max-width: 600px){
+	main {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	h1 {
+		margin-left: -0.5em;
+	}
+
+	.asideimg {
+		flex-direction: column;
+	}
 }
 
 
