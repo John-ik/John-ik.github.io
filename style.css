@@ -114,6 +114,10 @@ p {
 	text-indent: 1em;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 h1 {
 	font-size: 1.3em;
 	font-family: var(--font);
