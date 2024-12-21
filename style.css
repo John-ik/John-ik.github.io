@@ -111,11 +111,14 @@ footer {
 }
 
 p {
-	text-indent: 1em;
+	text-indent: 0em;
 }
 
 .nowrap {
 	white-space: nowrap;
+}
+h1,hr{
+	margin-left: -2em;
 }
 
 h1 {
@@ -127,7 +130,6 @@ h1 {
 	padding-top: 1em;
 	padding-bottom: 0em;
 	padding-left: 0;
-	margin-left: -2em;
 }
 
 .asideimg {
@@ -142,7 +144,6 @@ h1 {
 }
 .asideimg > .text {
 	flex: 2.5;
-	margin-left: 1em;
 }
 .asideimg>*>img {
 	width: 100%;
@@ -158,12 +159,15 @@ h1 {
 		margin-right: 1em;
 	}
 
-	h1 {
+	h1,hr {
 		margin-left: -0.5em;
 	}
 
 	.asideimg {
 		flex-direction: column;
+	}
+	.asideimg:nth-child(odd){
+		flex-direction: column-reverse;
 	}
 }
 
